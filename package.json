@@ -1,0 +1,13 @@
+{
+  "name": "devine-mon-chiffre-bot",
+  "version": "1.0.0",
+  "description": "Bot Discord - Devine mon chiffre",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.0.0",
+    "dotenv": "^17.4.2"
+  }
+}
