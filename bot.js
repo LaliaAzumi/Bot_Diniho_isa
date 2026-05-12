@@ -1,7 +1,7 @@
 require('dotenv').config();
 const token = process.env.DISCORD_TOKEN;
 const http = require('http');
-http.createServer((req, res) => res.end('Bot en ligne')).listen(3000);
+http.createServer((req, res) => res.end('Bot en ligne')).listen(process.env.PORT || 3000);
 const { 
     Client, GatewayIntentBits, EmbedBuilder, ActionRowBuilder, 
     ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle 
