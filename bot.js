@@ -213,5 +213,5 @@ client.on('interactionCreate', async (interaction) => {
         }
     }
 });
-
+client.login(token).catch(err => console.error('Erreur login:', err));
 client.login(token);
