@@ -24,7 +24,9 @@ const MAX = 100;
 client.once('ready', () => {
     console.log(`✅ Bot "Devine mon chiffre" prêt : ${client.user.tag}`);
 });
-
+client.on('messageCreate', async (message) => {
+    console.log(`Message reçu : ${message.content} de ${message.author.tag}`);
+});
 client.on('messageCreate', async (message) => {
     if (message.author.bot || !message.content.startsWith(PREFIX)) return;
 
