@@ -1,4 +1,7 @@
 require('dotenv').config();
+const token = process.env.DISCORD_TOKEN;
+const http = require('http');
+http.createServer((req, res) => res.end('Bot en ligne')).listen(3000);
 const { 
     Client, GatewayIntentBits, EmbedBuilder, ActionRowBuilder, 
     ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle 
@@ -208,5 +211,5 @@ client.on('interactionCreate', async (interaction) => {
         }
     }
 });
-console.log("TOKEN =", process.env.TOKEN);
-client.login(process.env.TOKEN);
+
+client.login(token);
