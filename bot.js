@@ -1,5 +1,5 @@
-require('dotenv').config();
 const token = process.env.DISCORD_TOKEN;
+console.log('Token chargé :', token ? 'OUI' : 'NON');
 const http = require('http');
 http.createServer((req, res) => res.end('Bot en ligne')).listen(process.env.PORT || 3000);
 const { 
